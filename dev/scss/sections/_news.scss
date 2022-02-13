@@ -2,111 +2,125 @@
     news
 ============= */
 #news-section {
-    background-color: pink;
+    display: grid;
+    background-color: aqua;
 
     .news-grid {
-        background-color: red;
-
-        .news-1 {
-            background-color: navy;
-
-            img {
-                background-color: red;
-
-            }
-
-            ul {
-                background-color: red;
-
-                li {
-                    background-color: red;
-                }
-            }
-        }
-
-        .news-2 {
-            background-color: lime;
-
-            img {
-                background-color: red;
-            }
-
-            ul {
-                background-color: red;
-
-                li {
-                    background-color: red;
-
-                }
-            }
-        }
-
-        .news-3 {
-            background-color: yellow;
-
-            img {
-                background-color: lime;
-
-
-
-
-            }
-
-            ul {
-                background-color: grey;
-
-                li {
-                    background-color: red;
-                }
-            }
-        }
+        display: flex;
     }
 }
 
-// section{
-//     background-color: aqua;
-// }
-
-
 #popular-news-section {
-    background-color: blue;
+    display: grid;
 
     .RT-col {
-        background-color: green;
 
-        .title-container {
-            background-color: orange;
+        .container {
+
+            h2 {
+                display: flex;
+            }
+
+            ol {
+                display: flex;
+
+                li {
+                    display: flex;
+
+                }
+            }
         }
 
-
-        ol {
-            background-color: purple;
-        }
     }
 }
 
 
 #latest-news-section {
-    background-color: red;
+    display: grid;
 
-    .title-container {
-        background-color: red;
+    .container {
+
 
         h2 {
-            background-color: none;
-        }
-    }
-
-    img {
-        background-color: grey;
-    }
-
-    ul {
-        background-color: red;
-
-        li {
-            background-color: blue;
+            display: flex;
 
         }
+
+        img {
+            display: flex;
+
+        }
+
+        ul {
+            
+            li {
+                display: flex;
+            }
+        }
+    }
+}
+
+
+#events-gallery{
+    display: grid;
+
+    .gallery-container {
+
+        display: flex;
+        
+        
+        .event-1{
+            a{
+                img{
+                    display: block;
+                }
+                p{
+                    display: flex;
+            
+                }
+            }
+        }
+
+        .event-2{
+            a{
+                img{
+                    display: block;
+                }
+                p{
+                    display: flex;
+            
+                }
+            }
+        }
+
+        .event-3{
+            a{
+                img{
+                    display: block;
+                }
+                p{
+                    display: flex;
+            
+                }
+            }
+        }
+
+        .event-4{
+            a{
+                img{
+                    display: block;
+                }
+                p{
+                    display: flex;
+            
+                }
+            }
+        }
+
+
+       
+
+        
+       
     }
 }

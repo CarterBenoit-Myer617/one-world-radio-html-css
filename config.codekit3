@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
+    "\/.gitattributes" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.gitattributes",
+      "oF" : 0
+    },
     "\/assets\/burger.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -1583,12 +1591,12 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/design\/structure-tags.sketch" : {
+    "\/design\/www.figma.com:.webloc" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/design\/structure-tags.sketch",
+      "oAP" : "\/design\/www.figma.com:.webloc",
       "oF" : 0
     },
     "\/dev\/content\/events.kit" : {
@@ -1930,6 +1938,25 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
     }
   },
   "hooks" : [
