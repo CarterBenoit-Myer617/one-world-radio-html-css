@@ -7,89 +7,6 @@
     .news-grid {
         background-color: red;
 
-        #popular-news-section {
-            background-color: blue;
-
-            .RT-col {
-                background-color: green;
-
-
-                .title-container {
-
-                    background-color: orange;
-
-
-                }
-
-
-                ol {
-
-                    background-color: purple;
-
-
-
-
-
-                }
-            }
-
-
-        }
-
-        #latest-news-section {
-            background-color: red;
-
-            .title-container {
-                background-color: red;
-
-                h2{
-                    background-color:none;
-
-
-                
-                }
-
-
-
-
-
-
-
-            }
-
-            img {
-                background-color: grey;
-
-
-
-
-            }
-
-            ul {
-                background-color: red;
-
-                li {
-                    background-color: blue;
-
-
-
-
-                }
-
-
-
-
-
-            }
-
-
-
-
-        }
-
-
-
-
         .news-1 {
             background-color: navy;
 
@@ -98,35 +15,13 @@
 
             }
 
-
             ul {
                 background-color: red;
 
                 li {
                     background-color: red;
-
-
-
-
                 }
-
-
-
-
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         .news-2 {
@@ -134,10 +29,6 @@
 
             img {
                 background-color: red;
-
-
-
-
             }
 
             ul {
@@ -146,19 +37,8 @@
                 li {
                     background-color: red;
 
-
-
-
                 }
-
-
-
-
             }
-
-
-
-
         }
 
         .news-3 {
@@ -177,30 +57,56 @@
 
                 li {
                     background-color: red;
-
-
-
-
                 }
-
-
-
-
             }
-
-
-
-
         }
-
-
     }
-
-
-
-
 }
 
 // section{
 //     background-color: aqua;
 // }
+
+
+#popular-news-section {
+    background-color: blue;
+
+    .RT-col {
+        background-color: green;
+
+        .title-container {
+            background-color: orange;
+        }
+
+
+        ol {
+            background-color: purple;
+        }
+    }
+}
+
+
+#latest-news-section {
+    background-color: red;
+
+    .title-container {
+        background-color: red;
+
+        h2 {
+            background-color: none;
+        }
+    }
+
+    img {
+        background-color: grey;
+    }
+
+    ul {
+        background-color: red;
+
+        li {
+            background-color: blue;
+
+        }
+    }
+}

@@ -413,140 +413,77 @@ textarea {
 /* =============
     Navigation
 ============= */
-nav {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 1024px) {
-  nav {
-    justify-content: flex-end;
-  }
-}
-@media (min-width: 1024px) {
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-nav ul li {
-  margin-bottom: 20px;
-}
-@media (min-width: 1024px) {
-  nav ul li {
-    align-items: center;
-    border-right: 2px solid #222222;
-    display: flex;
-    margin-bottom: 0px;
-  }
-}
-nav ul li button {
-  background-color: transparent;
-  color: #fff;
-  font-family: "Comfortaa", cursive;
-  font-size: 1.875rem;
-  text-decoration: none;
-  transition: 0.25s;
-  cursor: pointer;
-  color: #fff;
-}
-@media (min-width: 1024px) {
-  nav ul li button {
-    color: #000;
-    font-size: 1.25rem;
-  }
-}
-nav ul li button:hover {
-  color: #F8C832;
-}
-nav ul li:last-child {
-  border: none;
-}
-
 /* =============
     Header
 ============= */
 header {
-  display: grid;
-  padding-top: 2%;
-  grid-template-areas: ". header .";
-  grid-template-columns: auto 80% auto;
-  background-color: transparent;
-  position: fixed;
-  width: 100%;
-}
-header > div {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 20% 80% 20%;
-  grid-template-areas: "logo nav burger";
-}
-header > div #burger-container {
+  background-color: aqua;
   display: flex;
-  grid-area: burger;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: row;
 }
-header > div #burger-container #logo-container {
+
+.container {
+  display: contents;
+}
+
+#logo {
   grid-area: logo;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
-header > div #burger-container nav {
-  border: 1px solid red;
-  width: 100%;
-  height: 100%;
+
+#burger-container {
+  grid-area: burger;
+}
+@media (min-width: 768px) {
+  #burger-container {
+    display: contents;
+  }
+}
+@media (min-width: 1024px) {
+  #burger-container {
+    display: none;
+  }
+}
+
+#nav-section {
+  border: 1px solid green;
+  width: 500px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 1024px) {
-  header > div #burger-container nav {
-    justify-content: flex-end;
-  }
-}
-@media (min-width: 1024px) {
-  header > div #burger-container nav ul {
+  #nav-section ul {
     display: flex;
-    justify-content: flex-end;
   }
 }
-header > div #burger-container nav ul li {
-  margin-bottom: 20px;
-  text-align: right;
+#nav-section ul li {
+  margin: 30px, 0;
+  display: flex;
 }
 @media (min-width: 1024px) {
-  header > div #burger-container nav ul li {
-    align-items: center;
-    border-right: 2px solid #222222;
+  #nav-section ul li {
     display: flex;
     margin-bottom: 0px;
   }
 }
-header > div #burger-container nav ul li button {
+#nav-section ul li button {
   background-color: transparent;
-  color: #fff;
-  font-family: "Comfortaa", cursive;
   font-size: 1.875rem;
-  text-decoration: none;
   transition: 0.25s;
-  cursor: pointer;
-  color: #fff;
 }
 @media (min-width: 1024px) {
-  header > div #burger-container nav ul li button {
+  #nav-section ul li button {
     color: #000;
     font-size: 1.25rem;
   }
 }
-header > div #burger-container nav ul li button:hover {
+#nav-section ul li button:hover {
   color: #F8C832;
 }
-header > div #burger-container nav ul li a:link,
-header > div #burger-container nav ul li a:visited {
+#nav-section ul li a:link,
+#nav-section ul li a:visited {
   color: #fff;
   font-family: "Comfortaa", cursive;
   font-size: 1.875rem;
@@ -555,17 +492,17 @@ header > div #burger-container nav ul li a:visited {
   transition: 0.25s;
 }
 @media (min-width: 1024px) {
-  header > div #burger-container nav ul li a:link,
-header > div #burger-container nav ul li a:visited {
+  #nav-section ul li a:link,
+#nav-section ul li a:visited {
     color: #000;
   }
 }
-header > div #burger-container nav ul li a:link:hover, header > div #burger-container nav ul li a:link:active,
-header > div #burger-container nav ul li a:visited:hover,
-header > div #burger-container nav ul li a:visited:active {
+#nav-section ul li a:link:hover, #nav-section ul li a:link:active,
+#nav-section ul li a:visited:hover,
+#nav-section ul li a:visited:active {
   color: #F8C832;
 }
-header > div #burger-container nav ul li:last-child {
+#nav-section ul li:last-child {
   border: none;
 }
 
@@ -579,15 +516,13 @@ header > div #burger-container nav ul li:last-child {
   width: 100vw;
   height: 100vh;
   background: url(img/hero/hero-cover-1.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
+  z-index: -200;
 }
 #hero-section .hero-container h1 {
-  position: absolute;
-  width: 709px;
-  left: 286px;
-  top: 516px;
-  margin: 800px, 900px, 200px, 300px;
+  width: 700px;
+  height: 200px;
+  margin: -500px 900px 100px 300px;
 }
 
 /* =============
@@ -598,36 +533,6 @@ header > div #burger-container nav ul li:last-child {
 }
 #news-section .news-grid {
   background-color: red;
-}
-#news-section .news-grid #popular-news-section {
-  background-color: blue;
-}
-#news-section .news-grid #popular-news-section .RT-col {
-  background-color: green;
-}
-#news-section .news-grid #popular-news-section .RT-col .title-container {
-  background-color: orange;
-}
-#news-section .news-grid #popular-news-section .RT-col ol {
-  background-color: purple;
-}
-#news-section .news-grid #latest-news-section {
-  background-color: red;
-}
-#news-section .news-grid #latest-news-section .title-container {
-  background-color: red;
-}
-#news-section .news-grid #latest-news-section .title-container h2 {
-  background-color: none;
-}
-#news-section .news-grid #latest-news-section img {
-  background-color: grey;
-}
-#news-section .news-grid #latest-news-section ul {
-  background-color: red;
-}
-#news-section .news-grid #latest-news-section ul li {
-  background-color: blue;
 }
 #news-section .news-grid .news-1 {
   background-color: navy;
@@ -664,6 +569,38 @@ header > div #burger-container nav ul li:last-child {
 }
 #news-section .news-grid .news-3 ul li {
   background-color: red;
+}
+
+#popular-news-section {
+  background-color: blue;
+}
+#popular-news-section .RT-col {
+  background-color: green;
+}
+#popular-news-section .RT-col .title-container {
+  background-color: orange;
+}
+#popular-news-section .RT-col ol {
+  background-color: purple;
+}
+
+#latest-news-section {
+  background-color: red;
+}
+#latest-news-section .title-container {
+  background-color: red;
+}
+#latest-news-section .title-container h2 {
+  background-color: none;
+}
+#latest-news-section img {
+  background-color: grey;
+}
+#latest-news-section ul {
+  background-color: red;
+}
+#latest-news-section ul li {
+  background-color: blue;
 }
 
 /* =============
