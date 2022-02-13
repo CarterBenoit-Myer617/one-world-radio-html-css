@@ -3,13 +3,16 @@
 ============= */
 header {
     background-color: aqua;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+
     flex-direction: row;
     
 }
 
 .container {
-    display: contents;
+    display: flex;
 }
 
 #logo {
@@ -21,9 +24,16 @@ header {
 }
 
 #burger-container {
-    grid-area: burger;
+    // grid-area: burger;
 
-   
+    #burger{
+        display: flex;
+
+
+    }
+
+
+
     @include md {
         display:contents;
     }
@@ -38,8 +48,8 @@ header {
 #nav-section {
 
     border: 1px solid green;
-    width: 500px;
-    height: 50px;
+    // width: 500px;
+    // height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +67,7 @@ header {
         }
 
         li {
-            margin: 30px, 0;
+            
             display: flex;
             // align-items: center;
             // text-align: center;
@@ -67,17 +77,17 @@ header {
 
                 // border-right: 2px solid $charcoal;
                 display: flex;
-                margin-bottom: 0px;
+                // margin-bottom: 0px;
             }
 
             button {
                 background-color: transparent;
                 // color: $white;
-                // font-family: 
+                font-family: 'Antonio';
                 font-size: rem-calc(30);
-                // text-decoration: none;
+                text-decoration: none;
                 transition: 0.25s;
-                // cursor: pointer;
+                cursor: pointer;
                 // color: $white;
 
                 @include lg {
@@ -85,19 +95,16 @@ header {
                     font-size: rem-calc(20);
                 }
 
-                &:hover {
-                    color: $yellow;
-                }
             }
 
             a:link,
             a:visited {
                 color: $white;
-                font-family: 'Comfortaa', cursive;
+                font-family: 'Antonio';
                 font-size: rem-calc(30);
-                padding: 0 20px;
+                padding: 22px;
                 text-decoration: none;
-                transition: 0.25s;
+                transition: 0.35s;
 
                 @include lg {
                     color: $black;
@@ -105,14 +112,14 @@ header {
 
                 &:hover,
                 &:active {
-                    color: $yellow;
+                    color: magenta;
                 }
             }
         }
 
-        li:last-child {
-            border: none;
-        }
+        // li:last-child {
+        //     border: none;
+        // }
     }
 
 }

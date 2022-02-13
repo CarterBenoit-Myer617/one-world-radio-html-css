@@ -11,14 +11,11 @@
             width: 100vw;
             height: 100vh;
             background: url(img/hero/hero-cover-1.jpg);
+            background-size: cover;
             background-repeat: no-repeat;
-            // border: 20px solid yellow;
-            z-index: -200;
         }
 
         h1 {
-            width: 700px;
-            height: 200px;
             margin: -500px 900px 100px 300px;
         }
 

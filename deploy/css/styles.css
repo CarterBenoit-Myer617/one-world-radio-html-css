@@ -418,12 +418,13 @@ textarea {
 ============= */
 header {
   background-color: aqua;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-direction: row;
 }
 
 .container {
-  display: contents;
+  display: flex;
 }
 
 #logo {
@@ -431,8 +432,8 @@ header {
   display: flex;
 }
 
-#burger-container {
-  grid-area: burger;
+#burger-container #burger {
+  display: flex;
 }
 @media (min-width: 768px) {
   #burger-container {
@@ -447,8 +448,6 @@ header {
 
 #nav-section {
   border: 1px solid green;
-  width: 500px;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,19 +458,20 @@ header {
   }
 }
 #nav-section ul li {
-  margin: 30px, 0;
   display: flex;
 }
 @media (min-width: 1024px) {
   #nav-section ul li {
     display: flex;
-    margin-bottom: 0px;
   }
 }
 #nav-section ul li button {
   background-color: transparent;
+  font-family: "Antonio";
   font-size: 1.875rem;
+  text-decoration: none;
   transition: 0.25s;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   #nav-section ul li button {
@@ -479,17 +479,14 @@ header {
     font-size: 1.25rem;
   }
 }
-#nav-section ul li button:hover {
-  color: #F8C832;
-}
 #nav-section ul li a:link,
 #nav-section ul li a:visited {
   color: #fff;
-  font-family: "Comfortaa", cursive;
+  font-family: "Antonio";
   font-size: 1.875rem;
-  padding: 0 20px;
+  padding: 22px;
   text-decoration: none;
-  transition: 0.25s;
+  transition: 0.35s;
 }
 @media (min-width: 1024px) {
   #nav-section ul li a:link,
@@ -500,10 +497,7 @@ header {
 #nav-section ul li a:link:hover, #nav-section ul li a:link:active,
 #nav-section ul li a:visited:hover,
 #nav-section ul li a:visited:active {
-  color: #F8C832;
-}
-#nav-section ul li:last-child {
-  border: none;
+  color: magenta;
 }
 
 /* =============
@@ -516,12 +510,10 @@ header {
   width: 100vw;
   height: 100vh;
   background: url(img/hero/hero-cover-1.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  z-index: -200;
 }
 #hero-section .hero-container h1 {
-  width: 700px;
-  height: 200px;
   margin: -500px 900px 100px 300px;
 }
 
@@ -606,3 +598,6 @@ header {
 /* =============
     events
 ============= */
+#events-section {
+  background: #c4c4c4;
+}
