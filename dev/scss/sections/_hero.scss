@@ -1,0 +1,39 @@
+/* =============
+    hero
+============= */
+
+
+#hero-section {
+
+    .hero-container {
+
+        img {
+            width: 100vw;
+            height: 100vh;
+            background: url(img/hero/hero-cover-1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            // border: 20px solid yellow;
+    
+            
+        }
+
+        h1 {
+
+            position: absolute;
+            width: 709px;
+            left: 286px;
+            top: 516px;
+            margin: 800px, 900px, 200px, 300px
+
+            
+           
+        
+
+
+
+        }
+
+    }
+
+}
