@@ -534,68 +534,67 @@ header {
 /* =============
     news
 ============= */
-#news-section {
+#news {
   display: grid;
-  background-color: aqua;
 }
-#news-section .news-grid {
+#news .news-conatiner {
+  display: block;
+}
+
+#popular-news {
+  display: grid;
+}
+#popular-news .news-conatiner .container h2 {
+  display: flex;
+}
+#popular-news .news-conatiner .container ol {
+  display: flex;
+}
+#popular-news .news-conatiner .container ol li {
+  display: block;
+}
+
+#latest-news {
+  display: grid;
+}
+#latest-news .news-conatiner h2 {
+  display: flex;
+}
+#latest-news .news-conatiner img {
+  display: flex;
+}
+#latest-news .news-conatiner ul li {
   display: flex;
 }
 
-#popular-news-section {
+#upcoming-events {
   display: grid;
 }
-#popular-news-section .RT-col .container h2 {
+#upcoming-events .news-conatiner {
   display: flex;
 }
-#popular-news-section .RT-col .container ol {
-  display: flex;
-}
-#popular-news-section .RT-col .container ol li {
-  display: flex;
-}
-
-#latest-news-section {
-  display: grid;
-}
-#latest-news-section .container h2 {
-  display: flex;
-}
-#latest-news-section .container img {
-  display: flex;
-}
-#latest-news-section .container ul li {
-  display: flex;
-}
-
-#events-gallery {
-  display: grid;
-}
-#events-gallery .gallery-container {
-  display: flex;
-}
-#events-gallery .gallery-container .event-1 a img {
+#upcoming-events .news-conatiner .event-1 a img {
   display: block;
 }
-#events-gallery .gallery-container .event-1 a p {
+#upcoming-events .news-conatiner .event-1 a p {
   display: flex;
 }
-#events-gallery .gallery-container .event-2 a img {
+#upcoming-events .news-conatiner .event-2 a img {
   display: block;
 }
-#events-gallery .gallery-container .event-2 a p {
+#upcoming-events .news-conatiner .event-2 a p {
   display: flex;
 }
-#events-gallery .gallery-container .event-3 a img {
+#upcoming-events .news-conatiner .event-3 a img {
   display: block;
 }
-#events-gallery .gallery-container .event-3 a p {
+#upcoming-events .news-conatiner .event-3 a p {
   display: flex;
 }
-#events-gallery .gallery-container .event-4 a img {
+#upcoming-events .news-conatiner .event-4 a img {
   display: block;
 }
-#events-gallery .gallery-container .event-4 a p {
+#upcoming-events .news-conatiner .event-4 a p {
   display: flex;
 }
 

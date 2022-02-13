@@ -1,19 +1,19 @@
 /* =============
     news
 ============= */
-#news-section {
+#news{
     display: grid;
-    background-color: aqua;
+    
 
-    .news-grid {
-        display: flex;
+    .news-conatiner {
+        display: block;
     }
 }
 
-#popular-news-section {
+#popular-news{
     display: grid;
 
-    .RT-col {
+    .news-conatiner {
 
         .container {
 
@@ -25,7 +25,7 @@
                 display: flex;
 
                 li {
-                    display: flex;
+                    display:block;
 
                 }
             }
@@ -35,10 +35,10 @@
 }
 
 
-#latest-news-section {
+#latest-news {
     display: grid;
 
-    .container {
+    .news-conatiner{
 
 
         h2 {
@@ -61,10 +61,10 @@
 }
 
 
-#events-gallery{
+#upcoming-events{
     display: grid;
 
-    .gallery-container {
+    .news-conatiner {
 
         display: flex;
         
