@@ -378,6 +378,11 @@ header {
   border-style: dashed;
 }
 
+.container {
+  /* width: 800px; */
+  border: 10px solid purple;
+}
+
 /* =============
     Typography
 ============= */
