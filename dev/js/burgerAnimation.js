@@ -6,11 +6,11 @@ gsap.set(".burger-lines",{transformOrigin:"center"});
 gsap.set("#outline",{drawSVG: "0%"});
 
 const topTL = new gsap.timeline();
-topTL.to(".burger-lines:nth-child(1)",{duration:0.25, y:"-=30"})
-.to(".burger-lines:nth-child(1)",{duration:0.25, rotation:45, fill:"#fff"});
+topTL.to(".burger-lines:nth-child(1)",{duration:0.25, y:"+=8"})
+.to(".burger-lines:nth-child(1)",{duration:0.25, rotation:45,fill:"#fff"});
 
 const bottomTL = new gsap.timeline();
-bottomTL.to(".burger-lines:nth-child(3)",{duration:0.25, y:"+=30"})
+bottomTL.to(".burger-lines:nth-child(3)",{duration:0.25, y:"-=8"})
 .to(".burger-lines:nth-child(3)",{duration:0.25, rotation:-45,fill:"#fff"});
 
 const middleTL = new gsap.timeline();
@@ -22,5 +22,3 @@ export const burgerTL = new gsap.timeline({paused:true});
 burgerTL.add(topTL,"burger")
     .add(bottomTL,"burger")
     .add(middleTL,"burger")
-;
-// /"#fff"/

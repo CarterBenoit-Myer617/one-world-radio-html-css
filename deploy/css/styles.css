@@ -445,7 +445,7 @@ header {
   flex-direction: row;
 }
 
-.container {
+header.container {
   display: flex;
 }
 
@@ -529,13 +529,13 @@ header {
 ============= */
 #hero .container img {
   width: 100vw;
-  height: 100vh;
   background: url(img/hero/hero-cover-1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 #hero .container h1 {
-  margin: -500px 900px 100px 300px;
+  position: absolute;
+  left: 20%;
+  top: 80%;
+  font-size: 4rem;
 }
 
 /* =============
