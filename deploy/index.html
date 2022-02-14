@@ -16,43 +16,50 @@
 
 <body>
     
-     <header>
-        <div class="container">
+     <header class="bg-light">
+         <div class="header-container">
     
-            <img id="logo" src="img/header/logo.svg" alt="One World Radio">
+             <img id="logo" src="img/header/logo.svg" alt="One World Radio">
     
-            <section id="burger-container">
-               
-                    <svg id="burger" width="165" height="165" viewBox="0 0 165 165" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="28" y="104" width="109" height="18" fill="#C4C4C4" />
-                        <rect x="28" y="74" width="109" height="17" fill="#C4C4C4" />
-                        <rect x="28" y="43" width="109" height="18" fill="#C4C4C4" />
-                        <circle cx="82.5" cy="82.5" r="80.5" stroke="#C4C4C4" stroke-width="4" />
-                    </svg>
-              
-            </section>
+             <section id="burger-container">
+                 <div class="container">
+                     <svg id="burger" width="165" height="165" viewBox="0 0 165 165" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                         <rect x="28" y="104" width="109" height="18" fill="#C4C4C4" />
+                         <rect x="28" y="74" width="109" height="17" fill="#C4C4C4" />
+                         <rect x="28" y="43" width="109" height="18" fill="#C4C4C4" />
+                         <circle cx="82.5" cy="82.5" r="80.5" stroke="#C4C4C4" stroke-width="4" />
+                     </svg>
+                 </div>
     
-            <nav id="nav-section" data-nav="main-navigation">
-                <ul class="nav-container">
+             </section>
     
-                    <li><a href="#Events" class="nav-btns"><strong>EVENTS</strong></a></li>
+             <nav id="nav-section" data-nav="main-navigation">
+                 <div class="nav-container">
+                     <ul>
+                         <li><a href="#Events" class="nav-btns"><strong>EVENTS</strong></a></li>
     
-                    <li><a href="#Music" class="nav-btns"><strong>MUSIC</strong></a></li>
+                         <li><a href="#Music" class="nav-btns"><strong>MUSIC</strong></a></li>
     
-                    <li><a href="#Magazine" class="nav-btns"><strong>MAGAZINE</strong><a>
-                    <li>
-                </ul>
-            </nav>
+                         <li><a href="#Magazine" class="nav-btns"><strong>MAGAZINE</strong><a></li>
+                     </ul>
+                 </div>
     
-    
-        </div>
+             </nav>
     
     
+         </div>
     
-    </header>
-    <section id="hero-section">
+    
+    
+     </header>
+    
+     <!-- <div class="hero-container" >
+                   
+    </div> -->
+    <section id="hero" class="bg-light">
         
-            <div class="hero-container">
+            <div class="container">
         
                 <img src="img/hero/hero-cover-1.jpg" alt="hero">
         
@@ -65,8 +72,8 @@
             
                 <div class="news-container">
             
-                    <section id="popular-news" class="bg-dark">
-                        <div class="news-container">
+                    <section id="popular" class="bg-dark">
+                        <div class="container">
                             <h2>/POPULAR NEWS</h2>
                             <ol>
                                 <li class="p-n-1">
@@ -108,9 +115,9 @@
                         </div>
                     </section>
             
-                    <section id="latest-news" class="bg-light">
+                    <section id="latest" class="bg-dark">
             
-                        <div class="news-container">
+                        <div class="container">
                             <h2>/LATEST NEWS</h2>
             
                             <img src="img/news/cover.jpg" alt="latest-news-img">
@@ -133,20 +140,13 @@
                         </div>
                     </section>
             
-                    <section id="upcoming-events" class="bg-dark">
+                    <section id="upcoming" class="bg-light">
             
-                        <div class="news-container">
+                        <div class="container">
             
-            
-                            <div class="tittle-container">
-                                <h2>/UPCOMING EVENTS</h2>
-                            </div>
-            
-            
+                            <h2>/UPCOMING EVENTS</h2>
             
                             <div class="news-1">
-            
-            
             
                                 <img src="img/news/cover-1.jpg" alt="cover-img-1">
             
@@ -208,7 +208,6 @@
             
                     </section>
             
-            
                 </div>
             
             </section>
@@ -217,7 +216,7 @@
                     <div class="events-container">
                 
                 
-                        <section id="heading-container" class="bg-dark">
+                        <section id="heading" class="bg-dark">
                 
                             <div class="container">
                                 <ul>
@@ -232,13 +231,13 @@
                                     </li>
                                 </ul>
                 
-                            <div>
+                                <div>
                 
                         </section>
                 
-                        <section id="events-gallery" class="bg-light">
+                        <section id="gallery" class="bg-light">
                 
-                            <div class="gallery-container">
+                            <div class="container">
                 
                                 <div class="event-1">
                                     <a href="cover">
@@ -268,11 +267,10 @@
                                     </a>
                                 </div>
                 
-                 
+                
                             </div>
                 
                         </section>
-                
                 
                     </div>
                 </section>

@@ -1,16 +1,16 @@
 /* =============
     news
 ============= */
-#news{
+#news {
     display: grid;
-    
+
 
     .news-conatiner {
         display: block;
     }
 }
 
-#popular-news{
+#popular {
     display: grid;
 
     .news-conatiner {
@@ -25,7 +25,7 @@
                 display: flex;
 
                 li {
-                    display:block;
+                    display: block;
 
                 }
             }
@@ -35,10 +35,10 @@
 }
 
 
-#latest-news {
+#latest{
     display: grid;
 
-    .news-conatiner{
+    .news-conatiner {
 
 
         h2 {
@@ -52,7 +52,7 @@
         }
 
         ul {
-            
+
             li {
                 display: flex;
             }
@@ -61,66 +61,64 @@
 }
 
 
-#upcoming-events{
+#upcoming-events {
     display: grid;
 
     .news-conatiner {
 
         display: flex;
-        
-        
-        .event-1{
-            a{
-                img{
+
+
+        .event-1 {
+            a {
+                img {
                     display: block;
                 }
-                p{
+
+                p {
                     display: flex;
-            
+
                 }
             }
         }
 
-        .event-2{
-            a{
-                img{
+        .event-2 {
+            a {
+                img {
                     display: block;
                 }
-                p{
+
+                p {
                     display: flex;
-            
+
                 }
             }
         }
 
-        .event-3{
-            a{
-                img{
+        .event-3 {
+            a {
+                img {
                     display: block;
                 }
-                p{
+
+                p {
                     display: flex;
-            
+
                 }
             }
         }
 
-        .event-4{
-            a{
-                img{
+        .event-4 {
+            a {
+                img {
                     display: block;
                 }
-                p{
+
+                p {
                     display: flex;
-            
+
                 }
             }
         }
-
-
-       
-
-        
-       
     }
 }

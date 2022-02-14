@@ -2,9 +2,11 @@
     Header
 ============= */
 header {
-    background-color: aqua;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
+    display:flex;
+    flex-grow: inherit;
+    
+    // grid-template-columns: 1fr 1fr 1fr;
    
 
     flex-direction: row;
@@ -16,7 +18,7 @@ header {
 }
 
 #logo {
-    grid-area: logo;
+    
     display: flex;
 
     // justify-content: flex-end;

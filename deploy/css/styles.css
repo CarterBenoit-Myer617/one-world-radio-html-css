@@ -361,17 +361,21 @@ body ul li {
 }
 
 .bg-light {
-  background: #cacaca;
-  color: #333;
+  background-color: #fff;
 }
 
 .bg-dark {
-  background: #333;
-  color: #fff;
+  background-color: #333;
 }
 
 section {
-  margin: 100px 0px;
+  border-color: aqua;
+  border-style: dashed;
+}
+
+header {
+  border-color: red;
+  border-style: dashed;
 }
 
 /* =============
@@ -431,9 +435,8 @@ textarea {
     Header
 ============= */
 header {
-  background-color: aqua;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-grow: inherit;
   flex-direction: row;
 }
 
@@ -442,7 +445,6 @@ header {
 }
 
 #logo {
-  grid-area: logo;
   display: flex;
 }
 
@@ -520,14 +522,14 @@ header {
 /* =============
     hero
 ============= */
-#hero-section .hero-container img {
+#hero .container img {
   width: 100vw;
   height: 100vh;
   background: url(img/hero/hero-cover-1.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-#hero-section .hero-container h1 {
+#hero .container h1 {
   margin: -500px 900px 100px 300px;
 }
 
@@ -541,29 +543,29 @@ header {
   display: block;
 }
 
-#popular-news {
+#popular {
   display: grid;
 }
-#popular-news .news-conatiner .container h2 {
+#popular .news-conatiner .container h2 {
   display: flex;
 }
-#popular-news .news-conatiner .container ol {
+#popular .news-conatiner .container ol {
   display: flex;
 }
-#popular-news .news-conatiner .container ol li {
+#popular .news-conatiner .container ol li {
   display: block;
 }
 
-#latest-news {
+#latest {
   display: grid;
 }
-#latest-news .news-conatiner h2 {
+#latest .news-conatiner h2 {
   display: flex;
 }
-#latest-news .news-conatiner img {
+#latest .news-conatiner img {
   display: flex;
 }
-#latest-news .news-conatiner ul li {
+#latest .news-conatiner ul li {
   display: flex;
 }
 
@@ -605,7 +607,15 @@ header {
   display: flex;
 }
 
-#heading-container {
+.events-container {
+  display: flex;
+}
+
+.container {
+  display: flex;
+}
+
+#heading {
   display: flex;
 }
 
