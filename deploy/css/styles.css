@@ -440,85 +440,61 @@ textarea {
     Header
 ============= */
 header {
-  display: flex;
-  flex-grow: inherit;
-  flex-direction: row;
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-
-header.container {
-  display: flex;
-}
-
-#logo {
-  display: flex;
-}
-
-#burger-container #burger {
-  display: flex;
-}
-@media (min-width: 768px) {
-  #burger-container {
-    display: contents;
-  }
+header > div {
+  display: grid;
+  grid-template-areas: "logo burger" "nav nav";
+  grid-template-columns: 20% auto;
 }
 @media (min-width: 1024px) {
-  #burger-container {
-    display: none;
+  header > div {
+    grid-template-areas: "logo nav";
+    grid-template-columns: 20% auto;
   }
 }
-
-#nav-section {
-  border: 1px solid green;
-  display: flex;
-  justify-content: center;
+header > div #logo-container {
+  grid-area: logo;
+  padding: 10px;
+}
+header > div #burger-container {
   align-items: center;
-}
-@media (min-width: 1024px) {
-  #nav-section ul {
-    display: flex;
-  }
-}
-#nav-section ul li {
+  justify-content: flex-end;
   display: flex;
+  grid-area: burger;
+  padding: 10px;
+  position: relative;
 }
 @media (min-width: 1024px) {
-  #nav-section ul li {
-    display: flex;
+  header > div #burger-container {
+    display: none !important;
   }
 }
-#nav-section ul li button {
-  background-color: transparent;
-  font-family: "Antonio";
-  font-size: 1.875rem;
-  text-decoration: none;
-  transition: 0.25s;
-  cursor: pointer;
+header > div #burger-container #burger {
+  position: absolute;
+  z-index: 1000;
+  height: 40px;
+  width: 40px;
+}
+header > div #nav-container {
+  background-color: #222222;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  grid-area: nav;
+  z-index: 900;
 }
 @media (min-width: 1024px) {
-  #nav-section ul li button {
-    color: #000;
-    font-size: 1.25rem;
+  header > div #nav-container {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: static;
   }
-}
-#nav-section ul li a:link,
-#nav-section ul li a:visited {
-  color: #fff;
-  font-family: "Antonio";
-  font-size: 1.875rem;
-  padding: 22px;
-  text-decoration: none;
-  transition: 0.35s;
-}
-@media (min-width: 1024px) {
-  #nav-section ul li a:link,
-#nav-section ul li a:visited {
-    color: #000;
-  }
-}
-#nav-section ul li a:link:hover, #nav-section ul li a:link:active,
-#nav-section ul li a:visited:hover,
-#nav-section ul li a:visited:active {
-  color: magenta;
 }
 
 /* =============

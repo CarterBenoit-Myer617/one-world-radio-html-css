@@ -1,128 +1,202 @@
 /* =============
     Header
 ============= */
+
 header {
-    
-    display:flex;
-    flex-grow: inherit;
-    
-    // grid-template-columns: 1fr 1fr 1fr;
-   
+    background-color: $white;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
-    flex-direction: row;
-    
-}
+    >div {
+        display: grid;
+        grid-template-areas: 
+        "logo burger"
+        "nav nav";
+        grid-template-columns: 20% auto;
 
-header.container {
-    display: flex;
-    
-}
-
-#logo {
-    
-    display: flex;
-
-    // justify-content: flex-end;
-    // align-items: center;
-}
-
-#burger-container {
-    // grid-area: burger;
-
-    #burger{
-        display: flex;
-
-
-    }
-
-
-
-    @include md {
-        display:contents;
-    }
-
-    @include lg {
-        display: none;
-    }
-
-}
-
-
-#nav-section {
-
-    border: 1px solid green;
-    // width: 500px;
-    // height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    // @include lg {
-    //     justify-content: flex-end;
-    // }
-
-
-
-    ul {
         @include lg {
-            display: flex;
-            // justify-content: flex-end;
+            grid-template-areas: "logo nav";
+            grid-template-columns: 20% auto;
         }
 
-        li {
-            
+        #logo-container {
+            grid-area: logo;
+            padding: 10px;
+        }
+
+        #burger-container {
+            align-items: center;
+            justify-content: flex-end;
             display: flex;
-            // align-items: center;
-            // text-align: center;
-            // text-align: right;
+            grid-area: burger;
+            padding: 10px;
+            position: relative;
 
             @include lg {
-
-                // border-right: 2px solid $charcoal;
-                display: flex;
-                // margin-bottom: 0px;
+                display: none !important;
             }
 
-            button {
-                background-color: transparent;
-                // color: $white;
-                font-family: 'Antonio';
-                font-size: rem-calc(30);
-                text-decoration: none;
-                transition: 0.25s;
-                cursor: pointer;
-                // color: $white;
-
-                @include lg {
-                    color: $black;
-                    font-size: rem-calc(20);
-                }
-
-            }
-
-            a:link,
-            a:visited {
-                color: $white;
-                font-family: 'Antonio';
-                font-size: rem-calc(30);
-                padding: 22px;
-                text-decoration: none;
-                transition: 0.35s;
-
-                @include lg {
-                    color: $black;
-                }
-
-                &:hover,
-                &:active {
-                    color: magenta;
-                }
+            // burger svg
+            #burger{
+                position: absolute;
+                z-index: 1000;
+                height: 40px;
+                width: 40px;
             }
         }
 
-        // li:last-child {
-        //     border: none;
-        // }
-    }
+        #nav-container {
+            background-color: $charcoal;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            grid-area: nav;
+            z-index: 900;
 
+
+            @include lg {
+                background-color: $white;
+                height: 100%;
+                width: 100%;
+                position: static;
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+// header {
+    
+//     display:flex;
+//     flex-grow: inherit;
+    
+//     // grid-template-columns: 1fr 1fr 1fr;
+   
+
+//     flex-direction: row;
+    
+// }
+
+// header.container {
+//     display: flex;
+    
+// }
+
+// #logo {
+    
+//     display: flex;
+
+//     // justify-content: flex-end;
+//     // align-items: center;
+// }
+
+// #burger-container {
+//     // grid-area: burger;
+
+//     #burger{
+//         display: flex;
+
+
+//     }
+
+
+
+//     @include md {
+//         display:contents;
+//     }
+
+//     @include lg {
+//         display: none;
+//     }
+
+// }
+
+
+// #nav-section {
+
+//     border: 1px solid green;
+//     // width: 500px;
+//     // height: 50px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     // @include lg {
+//     //     justify-content: flex-end;
+//     // }
+
+
+
+//     ul {
+//         @include lg {
+//             display: flex;
+//             // justify-content: flex-end;
+//         }
+
+//         li {
+            
+//             display: flex;
+//             // align-items: center;
+//             // text-align: center;
+//             // text-align: right;
+
+//             @include lg {
+
+//                 // border-right: 2px solid $charcoal;
+//                 display: flex;
+//                 // margin-bottom: 0px;
+//             }
+
+//             button {
+//                 background-color: transparent;
+//                 // color: $white;
+//                 font-family: 'Antonio';
+//                 font-size: rem-calc(30);
+//                 text-decoration: none;
+//                 transition: 0.25s;
+//                 cursor: pointer;
+//                 // color: $white;
+
+//                 @include lg {
+//                     color: $black;
+//                     font-size: rem-calc(20);
+//                 }
+
+//             }
+
+//             a:link,
+//             a:visited {
+//                 color: $white;
+//                 font-family: 'Antonio';
+//                 font-size: rem-calc(30);
+//                 padding: 22px;
+//                 text-decoration: none;
+//                 transition: 0.35s;
+
+//                 @include lg {
+//                     color: $black;
+//                 }
+
+//                 &:hover,
+//                 &:active {
+//                     color: magenta;
+//                 }
+//             }
+//         }
+
+//         // li:last-child {
+//         //     border: none;
+//         // }
+//     }
+
+// }
