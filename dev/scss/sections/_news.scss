@@ -3,51 +3,74 @@
 ============= */
 #news {
     display: flex;
+    display: grid;
+    // "IM still tring to understand grid better"
+    
+    // grid-template-rows:15%,40%,auto,15% ;
+    // grid-template-columns: 15%,40%,auto,15%;
+    grid-template-areas: "latest latest popular";
+    grid-area: news-container;
 
     // border: 20px solid pink;
-    .news-conatiner {
+    .news-container {
         display: flex;
-    }
-}
+        justify-content: center;
+        align-items: center;
+        
 
-#popular {
-
-    // border: 10px solid blue;
-    .container {
-        h2 {
+        #popular {
             display: flex;
-        }
+            justify-content: center;
+            align-items: center;
 
-        ol {
-            li {
-                display: flex;
+            // border: 10px solid blue;
+            .container {
+                h2 {
+                    display: flex;
+                }
+
+                ol {
+                    li {
+                        display: flex;
+                    }
+                }
             }
         }
-    }
-}
 
-#latest {
-
-    // border: 10px solid yellow;
-    .container {
-        h2 {
+        #latest {
             display: flex;
-        }
+            justify-content: center;
+            align-items: center;
 
-        img {
-            display: flex;
-        }
+            // border: 10px solid yellow;
+            .container {
+                h2 {
+                    display: flex;
+                }
 
-        ul {
-            li {
-                display: flex;
+                img {
+                    display: flex;
+                }
+
+                ul {
+                    li {
+                        display: flex;
+                    }
+                }
             }
         }
+
     }
 }
+
+
+
+
 
 #upcoming {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     // border: 10px solid green;
     .columns {
         .col {

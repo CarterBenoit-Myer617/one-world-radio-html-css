@@ -509,7 +509,7 @@ header .container #nav-container {
     align-items: center;
   }
   header .container #nav-container nav #nav-ul li {
-    Display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 20%;
@@ -558,28 +558,46 @@ header .container #nav-container {
 ============= */
 #news {
   display: flex;
+  display: grid;
+  grid-template-areas: "latest latest popular";
+  grid-area: news-container;
 }
-#news .news-conatiner {
+#news .news-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#news .news-container #popular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#news .news-container #popular .container h2 {
+  display: flex;
+}
+#news .news-container #popular .container ol li {
+  display: flex;
+}
+#news .news-container #latest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#news .news-container #latest .container h2 {
+  display: flex;
+}
+#news .news-container #latest .container img {
+  display: flex;
+}
+#news .news-container #latest .container ul li {
   display: flex;
 }
 
-#popular .container h2 {
+#upcoming {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#popular .container ol li {
-  display: flex;
-}
-
-#latest .container h2 {
-  display: flex;
-}
-#latest .container img {
-  display: flex;
-}
-#latest .container ul li {
-  display: flex;
-}
-
 #upcoming .columns .col a img {
   display: flex;
 }
