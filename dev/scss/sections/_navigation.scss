@@ -15,15 +15,11 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-
-
-        
     }
 
     ul {
         @include lg {
             display: flex;
-            
             justify-content: flex-end;
         }
 
@@ -32,40 +28,39 @@ nav {
             text-align: right;
 
             @include lg {
+                margin-bottom: 20px;
+                text-align: right;
                 align-items: center;
-                border-right: 2px solid $charcoal;
                 display: flex;
-                margin-bottom: 0px;
             }
 
-           button {
-
+            button {
 
                 color: magenta;
                 font-size: rem-calc(30);
                 text-decoration: none;
                 transition: 0.25s;
-               
-                
+
 
                 @include lg {
-                    
+
                     font-size: rem-calc(20);
                 }
 
-                &:hover{
+                &:hover {
                     color: magenta;
                 }
             }
 
             a:link,
             a:visited {
-                
-               
+
+
                 font-size: rem-calc(30);
                 padding: 0 20px;
                 text-decoration: none;
                 transition: 0.25s;
+
                 @include lg {
                     color: $black;
                 }
