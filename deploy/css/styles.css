@@ -364,20 +364,6 @@ body ul li {
   background-color: #333;
 }
 
-section {
-  border-color: aqua;
-  border-style: dashed;
-}
-
-header {
-  border-color: red;
-  border-style: dashed;
-}
-
-.text-accent {
-  color: #3669C9;
-}
-
 /* =============
     Typography
 ============= */
@@ -446,7 +432,6 @@ header .container {
   grid-area: container;
   display: grid;
   grid-template-areas: "logo burger" "nav-container nav-container";
-  grid-template-columns: 20% auto;
 }
 @media (min-width: 1024px) {
   header .container {
@@ -478,9 +463,10 @@ header .container #burger-container #burger {
   width: 40px;
 }
 header .container #nav-container {
+  background-color: aqua;
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   grid-area: nav-container;
   z-index: 900;
 }
@@ -493,6 +479,7 @@ header .container #nav-container {
     height: 100%;
     width: 100%;
     position: static;
+    background-color: transparent;
   }
   header .container #nav-container nav {
     display: flex;
@@ -500,13 +487,17 @@ header .container #nav-container {
   }
   header .container #nav-container nav #nav-ul {
     display: flex;
-    flex-direction: row;
-    width: 40%;
-    justify-content: space;
+    justify-content: flex-end;
+    align-items: center;
   }
   header .container #nav-container nav #nav-ul li {
+    Display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 20%;
     margin-right: 20%;
+    font-size: x-large;
+    list-style: none;
   }
 }
 
@@ -530,9 +521,8 @@ header .container #nav-container {
   background-position: bottom right;
 }
 #hero .container h1 {
-  background-color: red;
   position: absolute;
-  left: 20%;
+  left: 30%;
   top: 80%;
   font-size: 4rem;
 }
