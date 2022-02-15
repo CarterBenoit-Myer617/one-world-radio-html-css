@@ -2,44 +2,51 @@
     news
 ============= */
 #news {
-    display: grid;
+    display: flex;
+
+    border: 20px solid pink;
+    
 
 
     .news-conatiner {
-        display: block;
+        display: flex;
+
     }
 }
 
 #popular {
-    display: grid;
+    
 
-    .news-conatiner {
+    border: 10px solid blue;
 
-        .container {
+    .container {
 
-            h2 {
-                display: flex;
-            }
 
-            ol {
-                display: flex;
-
-                li {
-                    display: block;
-
-                }
-            }
+        h2 {
+            display: flex;
         }
 
+
+
+
+        ol {
+
+
+            li {
+                display: flex;
+
+            }
+        }
     }
+
 }
 
 
-#latest{
-    display: grid;
-
-    .news-conatiner {
-
+#latest {
+    
+    border: 10px solid yellow;
+    
+    .container {
 
         h2 {
             display: flex;
@@ -61,64 +68,61 @@
 }
 
 
-#upcoming-events {
-    display: grid;
+#upcoming {
+    
+    border: 10px solid green;
 
-    .news-conatiner {
-
-        display: flex;
-
-
-        .event-1 {
+    .columns {
+       
+        .col {
             a {
                 img {
-                    display: block;
+                    display: flex;
                 }
 
                 p {
                     display: flex;
-
                 }
             }
         }
 
-        .event-2 {
+        .col {
             a {
                 img {
-                    display: block;
+                    display: flex;
                 }
 
                 p {
                     display: flex;
-
                 }
             }
         }
 
-        .event-3 {
+        .col {
             a {
                 img {
-                    display: block;
+                    display: flex;
                 }
 
                 p {
                     display: flex;
-
                 }
             }
         }
 
-        .event-4 {
+        .col {
             a {
                 img {
-                    display: block;
+                    display: flex;
                 }
 
                 p {
                     display: flex;
-
                 }
             }
         }
+
+
     }
 }
+

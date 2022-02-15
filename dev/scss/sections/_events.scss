@@ -1,24 +1,35 @@
 /* =============
     events
 ============= */
-#events{
-    display: flex;
-    
-}
-.events-container{
-    display: flex;
-    
-}
+#events {
 
-.container{
+    width: 100%;
+    height: 100%;
     display: flex;
-    
-}
-#heading{
-    display: flex;
-    
-}
-#events-gallery{
-    display: flex;
-    
+
+    .events-container {
+        display: flex;
+        flex-direction: column;
+        // align-content: center;
+
+
+        .container {
+            display: flex;
+
+        }
+
+
+    }
+
+    #gallery {
+        display: flex;
+
+        .column {
+            display: flex;
+
+        }
+
+    }
+
+
 }

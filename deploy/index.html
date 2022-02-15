@@ -16,8 +16,9 @@
 
 <body>
     
-    <header>
-        <div>
+    <header class="bg-light">
+        <div class="container">
+    
             <section id="burger-container">
                 <div id="burger">
                     <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45">
@@ -31,67 +32,26 @@
     
             <section id="nav-container" data-nav="main-navigation">
                 <nav>
-                    <ul>
-                        <li><a href="#events" class="nav-btns">EVENTS</a></li>
-                        <li><a href="#news" class="nav-btns">MUSIC</a></li>
-                        <li><a href="#hero" class="nav-btns">MAGAZINE</a></li>
     
+                    <ul id="nav-ul">
+                        <li><a href="#upcoming" class="nav-btns">MUSIC</a></li>
+                        <li><a href="#events" class="nav-btns">EVENTS</a></li>
+                        <li><a href="#latest" class="nav-btns">MAGAZINE</a></li>
+    
+                        <!-- <li><button class="nav-btns">MUSIC</button></li>
                         <li><button class="nav-btns">EVENTS</button></li>
-                        <li><button class="nav-btns">MUSIC</button></li>
-                        <li><button class="nav-btns">MAGAZINE</button></li>
+                        <li><button class="nav-btns">MAGAZINE</button></li> -->
                     </ul>
+    
                 </nav>
             </section>
     
-            <section id="logo-container">
-                <a href="#hero"><img src="img/header/logo.svg" alt="robot logo"></a>
+            <section id="container">
+                <a href="#logo"><img src="img/header/logo.svg" alt="robot logo"></a>
             </section>
+    
         </div>
     </header>
-    
-    
-    <!-- <header class="bg-light">
-         
-         <div class="container">
-    
-             <img id="logo" src="img/header/logo.svg" alt="One World Radio">
-    
-             <section id="burger-container">
-                 <div class="container">
-                     <svg id="burger" width="165" height="165" viewBox="0 0 165 165" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                         <rect x="28" y="104" width="109" height="18" fill="#C4C4C4" />
-                         <rect x="28" y="74" width="109" height="17" fill="#C4C4C4" />
-                         <rect x="28" y="43" width="109" height="18" fill="#C4C4C4" />
-                         <circle cx="82.5" cy="82.5" r="80.5" stroke="#C4C4C4" stroke-width="4" />
-                     </svg>
-                 </div>
-    
-             </section>
-    
-             <nav id="nav-section" data-nav="main-navigation">
-                 <div class="nav-container">
-                     <ul>
-                         <li><a href="#Events" class="nav-btns"><strong>EVENTS</strong></a></li>
-    
-                         <li><a href="#Music" class="nav-btns"><strong>MUSIC</strong></a></li>
-    
-                         <li><a href="#Magazine" class="nav-btns"><strong>MAGAZINE</strong><a></li>
-                     </ul>
-                 </div>
-    
-             </nav>
-    
-    
-         </div>
-    
-    
-    
-     </header>
-    
-     <!-- <div class="hero-container" >
-                   
-    </div> --> -->
     <section id="hero" class="bg-light">
         
             <div class="container">
@@ -177,11 +137,11 @@
             
                     <section id="upcoming" class="bg-light">
             
-                        <div class="container">
+                        <div class="columns">
             
                             <h2>/UPCOMING EVENTS</h2>
             
-                            <div class="news-1">
+                            <div class="col">
             
                                 <img src="img/news/cover-1.jpg" alt="cover-img-1">
             
@@ -201,7 +161,7 @@
             
             
             
-                            <div class="news-2">
+                            <div class="col">
             
                                 <img src="img/news/cover-2.jpg" alt="cover-img-2">
             
@@ -221,7 +181,7 @@
             
             
             
-                            <div class="news-3">
+                            <div class="col">
             
                                 <img src="img/news/cover-3.jpg" alt="cover-img-3">
             
@@ -272,30 +232,30 @@
                 
                         <section id="gallery" class="bg-light">
                 
-                            <div class="container">
+                            <div class="column">
                 
-                                <div class="event-1">
+                                <div class="col">
                                     <a href="cover">
                                         <img src="img/event/pa-1.png" alt="poster-cover-1">
                                         <h5>It lands on the Dekmantel label next month.</h5>
                                     </a>
                                 </div>
                 
-                                <div class="event-2">
+                                <div class="col">
                                     <a href="cover">
                                         <img src="img/event/pa-2.png" alt="poster-cover-2">
                                         <p>It lands on the Dekmantel label next month.</p>
                                     </a>
                                 </div>
                 
-                                <div class="event-3">
+                                <div class="col">
                                     <a href="cover">
                                         <img src="img/event/pa-3.png" alt="poster-cover-3">
                                         <p>It lands on the Dekmantel label next month.</p>
                                     </a>
                                 </div>
                 
-                                <div class="event-4">
+                                <div class="col">
                                     <a href="cover">
                                         <img src="img/event/pa-4.png" alt="poster-cover-4">
                                         <p>It lands on the Dekmantel label next month.</p>

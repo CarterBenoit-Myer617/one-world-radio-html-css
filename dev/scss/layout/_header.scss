@@ -1,23 +1,26 @@
 /* =============
     Header
 ============= */
-
 header {
-    background-color: $white;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
 
-    >div {
+    padding-top: 10%;
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-areas: ". container .";
+
+
+    .container {
+        grid-area: container;
         display: grid;
-        grid-template-areas: 
-        "logo burger"
-        "nav nav";
+        grid-template-areas:
+            "logo burger"
+            "nav-container nav-container";
         grid-template-columns: 20% auto;
 
         @include lg {
-            grid-template-areas: "logo nav";
+            grid-template-areas: "logo nav-container";
             grid-template-columns: 20% auto;
         }
 
@@ -39,7 +42,7 @@ header {
             }
 
             // burger svg
-            #burger{
+            #burger {
                 position: absolute;
                 z-index: 1000;
                 height: 40px;
@@ -48,155 +51,41 @@ header {
         }
 
         #nav-container {
-            background-color: $charcoal;
             position: fixed;
             width: 100vw;
             height: 100vh;
-            grid-area: nav;
+            grid-area: nav-container;
             z-index: 900;
 
 
             @include lg {
-                background-color: $white;
+
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                background-color: none;
                 height: 100%;
                 width: 100%;
                 position: static;
+
+                nav {
+                    display: flex;
+                    align-items: center;
+
+                    #nav-ul {
+                    
+                        display: flex;
+                        flex-direction: row;
+                        width: 40%;
+                        justify-content: space;
+
+                        li{
+                            margin-left:20%;
+                            margin-right:20%;
+                        }
+                    }
+                }
             }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-// header {
-    
-//     display:flex;
-//     flex-grow: inherit;
-    
-//     // grid-template-columns: 1fr 1fr 1fr;
-   
-
-//     flex-direction: row;
-    
-// }
-
-// header.container {
-//     display: flex;
-    
-// }
-
-// #logo {
-    
-//     display: flex;
-
-//     // justify-content: flex-end;
-//     // align-items: center;
-// }
-
-// #burger-container {
-//     // grid-area: burger;
-
-//     #burger{
-//         display: flex;
-
-
-//     }
-
-
-
-//     @include md {
-//         display:contents;
-//     }
-
-//     @include lg {
-//         display: none;
-//     }
-
-// }
-
-
-// #nav-section {
-
-//     border: 1px solid green;
-//     // width: 500px;
-//     // height: 50px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     // @include lg {
-//     //     justify-content: flex-end;
-//     // }
-
-
-
-//     ul {
-//         @include lg {
-//             display: flex;
-//             // justify-content: flex-end;
-//         }
-
-//         li {
-            
-//             display: flex;
-//             // align-items: center;
-//             // text-align: center;
-//             // text-align: right;
-
-//             @include lg {
-
-//                 // border-right: 2px solid $charcoal;
-//                 display: flex;
-//                 // margin-bottom: 0px;
-//             }
-
-//             button {
-//                 background-color: transparent;
-//                 // color: $white;
-//                 font-family: 'Antonio';
-//                 font-size: rem-calc(30);
-//                 text-decoration: none;
-//                 transition: 0.25s;
-//                 cursor: pointer;
-//                 // color: $white;
-
-//                 @include lg {
-//                     color: $black;
-//                     font-size: rem-calc(20);
-//                 }
-
-//             }
-
-//             a:link,
-//             a:visited {
-//                 color: $white;
-//                 font-family: 'Antonio';
-//                 font-size: rem-calc(30);
-//                 padding: 22px;
-//                 text-decoration: none;
-//                 transition: 0.35s;
-
-//                 @include lg {
-//                     color: $black;
-//                 }
-
-//                 &:hover,
-//                 &:active {
-//                     color: magenta;
-//                 }
-//             }
-//         }
-
-//         // li:last-child {
-//         //     border: none;
-//         // }
-//     }
-
-// }

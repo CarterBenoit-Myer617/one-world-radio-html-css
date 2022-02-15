@@ -7,7 +7,7 @@ nav {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: space;
 
     @include lg {
         justify-content: flex-end;
@@ -16,11 +16,12 @@ nav {
     ul {
         @include lg {
             display: flex;
+            
             justify-content: flex-end;
         }
 
         li {
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
             // text-align: right;
 
             @include lg {
@@ -31,42 +32,42 @@ nav {
             }
 
            button {
-               background-color: transparent;
-                color: $white;
-                font-family: 'Comfortaa', cursive;
+
+
+                color: magenta;
                 font-size: rem-calc(30);
                 text-decoration: none;
                 transition: 0.25s;
-                cursor: pointer;
-                color: $white;
+               
+                
 
                 @include lg {
-                    color: $black;
+                    
                     font-size: rem-calc(20);
                 }
 
                 &:hover{
-                    color: $yellow;
+                    color: magenta;
                 }
             }
 
-            // a:link,
-            // a:visited {
-            //     color: $white;
-            //     font-family: 'Comfortaa', cursive;
-            //     font-size: rem-calc(30);
-            //     // padding: 0 20px;
-            //     text-decoration: none;
-            //     transition: 0.25s;
-            //     @include lg {
-            //         color: $black;
-            //     }
+            a:link,
+            a:visited {
+                // color: $white;
+                font-family: 'Comfortaa', cursive;
+                font-size: rem-calc(30);
+                padding: 0 20px;
+                text-decoration: none;
+                transition: 0.25s;
+                @include lg {
+                    color: $black;
+                }
 
-            //     &:hover,
-            //     &:active {
-            //         color: $yellow;
-            //     }
-            // }
+                &:hover,
+                &:active {
+                    color: $yellow;
+                }
+            }
         }
 
         li:last-child {
