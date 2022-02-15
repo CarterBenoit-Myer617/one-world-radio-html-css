@@ -501,6 +501,7 @@ header .container #nav-container {
   header .container #nav-container nav {
     display: flex;
     align-items: center;
+    font-optical-sizing: 3em;
   }
   header .container #nav-container nav #nav-ul {
     display: flex;
@@ -546,7 +547,10 @@ header .container #nav-container {
   width: 573px;
   height: 192px;
   left: 286px;
-  top: 816px;
+  top: 70%;
+  bottom: auto;
+  font-size: 5em;
+  font-optical-sizing: 3em;
 }
 
 /* =============
@@ -554,15 +558,11 @@ header .container #nav-container {
 ============= */
 #news {
   display: flex;
-  border: 20px solid pink;
 }
 #news .news-conatiner {
   display: flex;
 }
 
-#popular {
-  border: 10px solid blue;
-}
 #popular .container h2 {
   display: flex;
 }
@@ -570,9 +570,6 @@ header .container #nav-container {
   display: flex;
 }
 
-#latest {
-  border: 10px solid yellow;
-}
 #latest .container h2 {
   display: flex;
 }
@@ -583,9 +580,6 @@ header .container #nav-container {
   display: flex;
 }
 
-#upcoming {
-  border: 10px solid green;
-}
 #upcoming .columns .col a img {
   display: flex;
 }

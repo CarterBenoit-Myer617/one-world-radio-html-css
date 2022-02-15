@@ -4,62 +4,41 @@
 #news {
     display: flex;
 
-    border: 20px solid pink;
-    
-
-
+    // border: 20px solid pink;
     .news-conatiner {
         display: flex;
-
     }
 }
 
 #popular {
-    
 
-    border: 10px solid blue;
-
+    // border: 10px solid blue;
     .container {
-
-
         h2 {
             display: flex;
         }
 
-
-
-
         ol {
-
-
             li {
                 display: flex;
-
             }
         }
     }
-
 }
 
-
 #latest {
-    
-    border: 10px solid yellow;
-    
-    .container {
 
+    // border: 10px solid yellow;
+    .container {
         h2 {
             display: flex;
-
         }
 
         img {
             display: flex;
-
         }
 
         ul {
-
             li {
                 display: flex;
             }
@@ -67,13 +46,10 @@
     }
 }
 
-
 #upcoming {
-    
-    border: 10px solid green;
 
+    // border: 10px solid green;
     .columns {
-       
         .col {
             a {
                 img {
@@ -121,8 +97,5 @@
                 }
             }
         }
-
-
     }
 }
-
