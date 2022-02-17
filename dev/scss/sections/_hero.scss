@@ -21,21 +21,38 @@
             background-size: cover;
             background-position: bottom right;
 
-           
+
         }
+
         h1 {
 
-            // margin: -500px 900px 100px 300px;
-            // background-color: red;
+            // // margin: -500px 900px 100px 300px;
+            // // background-color: red;
+            // position: absolute;
+            // width: 573px;
+            // height: 192px;
+            // left: 286px;
+            // top: 70%;
+            // bottom: auto;
+            // font-size: 5em;
+            // font-optical-sizing: 3em;
+
             position: absolute;
-            width: 573px;
-            height: 192px;
-            left: 286px;
-            top: 70%;
-            bottom: auto;
-            font-size: 5em;
-            font-optical-sizing: 3em;
-           
+            left: 16.55%;
+            right: 50.87%;
+            top: 70.05%;
+            bottom: 13.71%;
+
+            font-family: Antonio;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 96px;
+            line-height: 96px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+         
+
 
 
         }

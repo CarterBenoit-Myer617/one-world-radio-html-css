@@ -18,7 +18,7 @@ html {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
+  line-height: auto;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -36,16 +36,12 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
-main {
-  display: block;
-}
-
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
+  font-size: 1.5rem;
   margin: 0.67em 0;
 }
 
@@ -69,7 +65,7 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  font-family: Antonio;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -360,10 +356,6 @@ body ul li {
   list-style: none;
 }
 
-.bg-dark {
-  background-color: #333;
-}
-
 /* =============
     Typography
 ============= */
@@ -371,7 +363,11 @@ body {
   font-family: "Antonio";
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
   padding: 0;
 }
@@ -382,11 +378,19 @@ p {
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 6 rem;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 3 rem;
+}
+
+h3 {
+  font-size: 1.5 rem;
+}
+
+h4 {
+  font-size: 1.125 rem;
 }
 
 /* =============
@@ -420,43 +424,11 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  left: 0;
-  position: fixed;
-  top: 0;
-  padding-top: 4em;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 10% auto 10%;
-  grid-template-areas: ". container .";
-}
-header .container {
-  grid-area: container;
-  display: grid;
-  grid-template-areas: "logo burger" "nav-container nav-container";
-}
-@media (min-width: 1024px) {
-  header .container {
-    grid-template-areas: "logo nav-container";
-    grid-template-columns: 20% auto;
-  }
-}
 header .container #logo-container {
-  grid-area: logo;
-  padding: 10px;
+  margin: 0%;
 }
-@media (min-width: 768px) {
-  header .container #logo-container {
-    size: -50%;
-  }
-}
-header .container #burger-container {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  grid-area: burger;
-  padding: 10px;
-  position: relative;
+header .container #logo-container #logo svg {
+  margin: 0%;
 }
 @media (min-width: 1024px) {
   header .container #burger-container {
@@ -472,56 +444,36 @@ header .container #burger-container #burger {
   width: 40px;
 }
 header .container #nav-container {
-  background-color: aqua;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  grid-template-areas: body;
-  grid-area: nav-container;
-  z-index: 900;
+  display: none;
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  header .container #nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+  }
+}
+header .container #nav-container nav ul {
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
 }
-@media (min-width: 576px) {
-  header .container #nav-container {
-    font-size: 9em;
-  }
+header .container #nav-container nav ul li {
+  font-family: Antonio;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 80px;
 }
-@media (min-width: 1024px) {
-  header .container #nav-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: static;
-    background-color: transparent;
-  }
-  header .container #nav-container nav {
-    display: flex;
-    align-items: center;
-    font-optical-sizing: 3em;
-  }
-  header .container #nav-container nav #nav-ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  header .container #nav-container nav #nav-ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: x-large;
-    list-style: none;
-  }
+header .container #nav-container nav ul li #music {
+  margin: 0;
 }
-@media (min-width: 1024px) and (min-width: 768px) {
-  header .container #nav-container nav #nav-ul li > a {
-    font-size: 1em;
-  }
+header .container #nav-container nav ul li #events {
+  margin: 0;
+}
+header .container #nav-container nav ul li #magazine {
+  margin: 0;
 }
 
 /* =============
@@ -544,13 +496,18 @@ header .container #nav-container {
 }
 #hero .container h1 {
   position: absolute;
-  width: 573px;
-  height: 192px;
-  left: 286px;
-  top: 70%;
-  bottom: auto;
-  font-size: 5em;
-  font-optical-sizing: 3em;
+  left: 16.55%;
+  right: 50.87%;
+  top: 70.05%;
+  bottom: 13.71%;
+  font-family: Antonio;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 96px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
 }
 
 /* =============
