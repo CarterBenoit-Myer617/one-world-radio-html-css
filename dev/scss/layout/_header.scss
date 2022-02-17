@@ -3,29 +3,10 @@
 ============= */
 header {
 
-    // left: 0;
-    // position: fixed;
-    // top: 0;
-    // padding-top: 4em;
-
-    // width: 100%;
-    // display: grid;
-    // grid-template-columns: 10% auto 10%;
-    // grid-template-areas: ". container .";
-
+   
 
     .container {
-        // grid-area: container;
-        // display: grid;
-        // grid-template-areas:
-        //     "logo burger"
-        //     "nav-container nav-container";
-        // grid-template-columns: 20% auto;
-
-        // @include lg {
-        //     grid-template-areas: "logo nav-container";
-        //     grid-template-columns: 20% auto;
-        // }
+        
 
         #logo-container {
 
@@ -34,36 +15,16 @@ header {
             #logo {
 
                 svg {
-
                     margin: 0%;
-
                 }
             }
-
-            // grid-area: logo;
-            // padding: 10px;
-
-            //     @include md {
-            //         size: -50%;
-
-
-            //     }
-
-
         }
 
         #burger-container {
-            // justify-content: center;
-            // align-items: center;
-            // display: flex;
-            // grid-area: burger;
-            // padding: 10px;
-            // position: relative;
-
+            
             @include lg {
                 display: none !important;
             }
-
             // burger svg
             #burger {
                 justify-content: center;
@@ -77,17 +38,6 @@ header {
 
         #nav-container {
 
-            // position: fixed;
-            // width: 100%;
-            // height: 100%;
-            // grid-template-areas: body;
-            // grid-area: nav-container;
-            // z-index: 900;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-
-
             display: none;
 
             @include lg {
@@ -96,13 +46,8 @@ header {
                     flex-direction: row;
                     align-items: flex-start;
                     padding: 0px;
-
-
-
-
                 }
             }
-
 
 
             nav {
@@ -112,11 +57,7 @@ header {
                     align-items: center;
                     text-align: center;
 
-
-
                     li {
-
-
 
                         font-family: Antonio;
                         font-style: normal;
@@ -135,9 +76,7 @@ header {
                         #magazine {
                             margin: 0;
                         }
-
                     }
-
                 }
             }
         }
