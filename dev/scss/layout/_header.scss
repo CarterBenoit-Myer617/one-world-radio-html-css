@@ -50,12 +50,14 @@ header {
             }
 
 
-            nav {
+            #navigation{
+
+                display: flex;
+                align-items: center;
+                text-align: center;
 
                 ul {
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
+                    
 
                     li {
 
