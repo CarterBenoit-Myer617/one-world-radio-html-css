@@ -426,10 +426,13 @@ textarea {
 ============= */
 header .container {
   display: grid;
+  margin: 4rem;
   grid-template-columns: 50% auto;
-  grid-template-areas: "logo burger" "nav nav";
+  grid-template-areas: "logo burger" "logo nav";
 }
 header .container #logo-container {
+  display: flex;
+  align-items: center;
   grid-area: logo;
 }
 header .container #logo-container #logo svg {
@@ -448,27 +451,29 @@ header .container #burger-container {
   }
 }
 header .container #burger-container #burger {
-  height: 40px;
-  width: 40px;
+  height: 5rem;
+  width: 5rem;
 }
 header .container #nav-container {
-  grid-area: nav;
   display: none;
 }
 @media (min-width: 1024px) and (min-width: 1024px) {
   header .container #nav-container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 16px;
   }
 }
 header .container #nav-container #navigation {
+  grid-area: nav;
   display: flex;
   align-items: center;
   text-align: center;
 }
 header .container #nav-container #navigation ul li {
+  display: inline;
+  padding-right: 1rem;
   font-family: Antonio;
   font-style: normal;
   font-weight: normal;
