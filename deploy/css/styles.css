@@ -531,8 +531,11 @@ header .container #nav-container #navigation ul li #magazine {
 ============= */
 #news {
   display: grid;
-  padding: 5%;
-  margin: 0 auto;
+  display: flex;
+  grid-template-columns: 10% auto 10%;
+  grid-template-areas: ". news .";
+  justify-content: center;
+  align-items: center;
 }
 
 .news-container {
@@ -544,29 +547,33 @@ header .container #nav-container #navigation ul li #magazine {
 }
 #popular .popular-container h2 {
   display: flex;
+  font-size: 3rem;
 }
 #popular .popular-container ol li {
-  display: flex;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 2rem;
 }
 
 #latest {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #latest .container h2 {
   display: flex;
+  font-size: 3rem;
 }
 #latest .container img {
   display: flex;
+  margin: 5px;
 }
 #latest .container ul li {
   display: flex;
+  font-size: 1.5rem;
 }
 
 #upcoming {
   display: flex;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 #upcoming .columns .col a img {
   margin: 0%;

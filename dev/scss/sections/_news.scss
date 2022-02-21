@@ -2,17 +2,20 @@
     news
 ============= */
 #news {
-
-
     display: grid;
-
-    padding: 5%;
-    margin: 0 auto;
+    display: flex;
+    grid-template-columns: 10% auto 10%;
+    grid-template-areas: ". news .";
+    justify-content: center;
+    align-items: center;
+    
+    
 
 }
 
 .news-container {
     display: flex;
+
 }
 
 
@@ -20,15 +23,26 @@
     display: flex;
     // justify-content: center;
     // align-items: center;
+   
 
     .popular-container {
+        
+
+        
         h2 {
             display: flex;
+            font-size: 3rem;
         }
 
         ol {
+
+            
             li {
-                display: flex;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                font-size: 2rem;
+               
+                
             }
         }
     }
@@ -39,22 +53,24 @@
 
 
 #latest {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+    display: flex;
+    
     .container {
         h2 {
             display: flex;
+            font-size: 3rem;
         }
 
         img {
             display: flex;
+            margin: 5px;
         }
 
         ul {
             li {
                 display: flex;
+                font-size: 1.5rem;
             }
         }
     }
@@ -62,7 +78,7 @@
 
 #upcoming {
     display: flex;
-    margin-top: 5%;
+    margin-top: 10%;
     // justify-content: center;
     // align-items: center;
 
