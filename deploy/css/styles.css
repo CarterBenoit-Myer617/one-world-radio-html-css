@@ -441,13 +441,11 @@ header .container #logo-container {
   grid-area: logo;
 }
 header .container #logo-container #logo svg {
-  width: 2rem;
-  height: 2rem;
   margin: 0%;
 }
 header .container #burger-container {
-  grid-area: burger;
   display: flex;
+  grid-area: burger;
   justify-content: flex-end;
   align-items: center;
   margin-right: 16px;
@@ -477,7 +475,6 @@ header .container #nav-container #navigation {
   display: flex;
   align-items: center;
   text-align: center;
-  text-decoration: none;
 }
 header .container #nav-container #navigation ul li {
   display: inline;
@@ -485,8 +482,7 @@ header .container #nav-container #navigation ul li {
   font-family: Antonio;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
-  line-height: 80px;
+  font-size: 2rem;
 }
 header .container #nav-container #navigation ul li #music {
   margin: 0;
@@ -505,28 +501,29 @@ header .container #nav-container #navigation ul li #magazine {
     hero
 ============= */
 #hero {
+  display: grid;
   width: 100vw;
   height: 100vh;
-  margin-bottom: 30%;
+  margin-bottom: 2%;
 }
 #hero .container img {
-  width: 100vw;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   background: url(img/hero/hero-cover-1.jpg);
+  background-image: cover;
   background-size: cover;
-  background-position: bottom right;
 }
 #hero .container h1 {
   position: absolute;
   left: 16.55%;
   right: 50.87%;
-  top: 90.05%;
-  bottom: 13.71%;
+  top: 85.05%;
+  bottom: 10.71%;
   font-family: Antonio;
   font-style: normal;
   font-weight: normal;
-  font-size: 96px;
-  line-height: 96px;
+  font-size: 9rem;
+  line-height: 9rem;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -536,39 +533,39 @@ header .container #nav-container #navigation ul li #magazine {
     news
 ============= */
 #news {
-  display: flex;
-  display: grid;
-  grid-template-areas: "latest latest popular";
-  grid-area: news-container;
+  background-color: aqua;
+  margin: 1rem;
 }
-#news .news-container {
+
+.news-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
-#news .news-container #popular {
+
+#popular {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#news .news-container #popular .container h2 {
+#popular .popular-container h2 {
   display: flex;
 }
-#news .news-container #popular .container ol li {
+#popular .popular-container ol li {
   display: flex;
 }
-#news .news-container #latest {
+
+#latest {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#news .news-container #latest .container h2 {
+
+.container h2 {
   display: flex;
 }
-#news .news-container #latest .container img {
+.container img {
   display: flex;
 }
-#news .news-container #latest .container ul li {
+.container ul li {
   display: flex;
 }
 
@@ -577,28 +574,29 @@ header .container #nav-container #navigation ul li #magazine {
   justify-content: center;
   align-items: center;
 }
-#upcoming .columns .col a img {
+
+.columns .col a img {
   display: flex;
 }
-#upcoming .columns .col a p {
+.columns .col a p {
   display: flex;
 }
-#upcoming .columns .col a img {
+.columns .col a img {
   display: flex;
 }
-#upcoming .columns .col a p {
+.columns .col a p {
   display: flex;
 }
-#upcoming .columns .col a img {
+.columns .col a img {
   display: flex;
 }
-#upcoming .columns .col a p {
+.columns .col a p {
   display: flex;
 }
-#upcoming .columns .col a img {
+.columns .col a img {
   display: flex;
 }
-#upcoming .columns .col a p {
+.columns .col a p {
   display: flex;
 }
 
