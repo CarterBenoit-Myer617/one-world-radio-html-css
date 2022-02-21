@@ -2,18 +2,24 @@
     news
 ============= */
 #news {
-    background-color: aqua;
-    margin: 1rem;
+
+
+    display: grid;
+
+    padding: 5%;
+    margin: 0 auto;
+
 }
 
 .news-container {
-    display: flex
+    display: flex;
 }
+
 
 #popular {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
 
     .popular-container {
         h2 {
@@ -26,8 +32,10 @@
             }
         }
     }
-
 }
+
+
+
 
 
 #latest {
@@ -35,80 +43,75 @@
     justify-content: center;
     align-items: center;
 
-
-
-}
-
-
-.container {
-    h2 {
-        display: flex;
-    }
-
-    img {
-        display: flex;
-    }
-
-    ul {
-        li {
+    .container {
+        h2 {
             display: flex;
+        }
+
+        img {
+            display: flex;
+        }
+
+        ul {
+            li {
+                display: flex;
+            }
         }
     }
 }
-
-
 
 #upcoming {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    margin-top: 5%;
+    // justify-content: center;
+    // align-items: center;
 
-.columns {
-    .col {
-        a {
-            img {
-                display: flex;
-            }
+    .columns {
+        .col {
+            a {
+                img {
+                    margin: 0%
+                }
 
-            p {
-                display: flex;
-            }
-        }
-    }
-
-    .col {
-        a {
-            img {
-                display: flex;
-            }
-
-            p {
-                display: flex;
+                p {
+                    margin: 0%
+                }
             }
         }
-    }
 
-    .col {
-        a {
-            img {
-                display: flex;
-            }
+        .col {
+            a {
+                img {
+                    margin: 0%
+                }
 
-            p {
-                display: flex;
+                p {
+                    margin: 0%
+                }
             }
         }
-    }
 
-    .col {
-        a {
-            img {
-                display: flex;
+        .col {
+            a {
+                img {
+                    margin: 0%
+                }
+
+                p {
+                    margin: 0%
+                }
             }
+        }
 
-            p {
-                display: flex;
+        .col {
+            a {
+                img {
+                    margin: 0%
+                }
+
+                p {
+                    margin: 0%
+                }
             }
         }
     }

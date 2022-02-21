@@ -1,79 +1,79 @@
-/* =============
-    Navigation
-============= */
-nav {
-    // border: 1px solid red;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// /* =============
+//     Navigation
+// ============= */
+// nav {
+//     // border: 1px solid red;
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    @include md {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+//     @include md {
+//         width: 100%;
+//         height: 100%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
 
-    ul {
-        @include lg {
-            display: flex;
-            justify-content: flex-end;
-        }
+//     ul {
+//         @include lg {
+//             display: flex;
+//             justify-content: flex-end;
+//         }
 
-        li {
-            margin-bottom: 20px;
-            text-align: right;
+//         li {
+//             margin-bottom: 20px;
+//             text-align: right;
 
-            @include lg {
-                margin-bottom: 20px;
-                text-align: right;
-                align-items: center;
-                display: flex;
-            }
+//             @include lg {
+//                 margin-bottom: 20px;
+//                 text-align: right;
+//                 align-items: center;
+//                 display: flex;
+//             }
 
-            button {
+//             button {
 
-                color: magenta;
-                font-size: rem-calc(30);
-                text-decoration: none;
-                transition: 0.25s;
-
-
-                @include lg {
-
-                    font-size: rem-calc(20);
-                }
-
-                &:hover {
-                    color: magenta;
-                }
-            }
-
-            a:link,
-            a:visited {
+//                 color: magenta;
+//                 font-size: rem-calc(30);
+//                 text-decoration: none;
+//                 transition: 0.25s;
 
 
-                font-size: rem-calc(30);
-                padding: 0 20px;
-                text-decoration: none;
-                transition: 0.25s;
+//                 @include lg {
 
-                @include lg {
-                    color: $black;
-                }
+//                     font-size: rem-calc(20);
+//                 }
 
-                &:hover,
-                &:active {
-                    color: $yellow;
-                }
-            }
-        }
+//                 &:hover {
+//                     color: magenta;
+//                 }
+//             }
 
-        li:last-child {
-            border: none;
-        }
-    }
-}
+//             a:link,
+//             a:visited {
+
+
+//                 font-size: rem-calc(30);
+//                 padding: 0 20px;
+//                 text-decoration: none;
+//                 transition: 0.25s;
+
+//                 @include lg {
+//                     color: $black;
+//                 }
+
+//                 &:hover,
+//                 &:active {
+//                     color: $yellow;
+//                 }
+//             }
+//         }
+
+//         li:last-child {
+//             border: none;
+//         }
+//     }
+// }
