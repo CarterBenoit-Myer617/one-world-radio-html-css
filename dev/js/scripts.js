@@ -3,6 +3,8 @@ import { burgerTL } from "./burgerAnimation";
 import {menuAnimation} from "./mobileMenu.js"
 import {scrollPage} from "./pageScroll"
 import { displayWindowSize } from "./mobileResizing"
+import { Carousel } from "@fancyapps/ui";
+
 
 var burgerButton = document.querySelector("#burger");
 let canISeeMenu = false;
