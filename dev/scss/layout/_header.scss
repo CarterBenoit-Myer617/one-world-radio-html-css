@@ -6,11 +6,17 @@ header {
    
 
     .container {
+
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: 
+        "logo burger"
+        "nav nav";
         
 
         #logo-container {
 
-            margin: 0%;
+           grid-area: logo;
 
             #logo {
 
@@ -21,22 +27,29 @@ header {
         }
 
         #burger-container {
+            grid-area: burger;
+            // border: 1px solid red;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 16px;
             
             @include lg {
                 display: none !important;
             }
             // burger svg
             #burger {
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                z-index: 1000;
+                // justify-content: center;
+                // align-items: center;
+                // position: absolute;
+                // z-index: 1000;
                 height: 40px;
                 width: 40px;
             }
         }
 
         #nav-container {
+            grid-area: nav;
 
             display: none;
 

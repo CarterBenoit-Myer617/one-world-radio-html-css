@@ -424,11 +424,23 @@ textarea {
 /* =============
     Header
 ============= */
+header .container {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "logo burger" "nav nav";
+}
 header .container #logo-container {
-  margin: 0%;
+  grid-area: logo;
 }
 header .container #logo-container #logo svg {
   margin: 0%;
+}
+header .container #burger-container {
+  grid-area: burger;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 16px;
 }
 @media (min-width: 1024px) {
   header .container #burger-container {
@@ -436,14 +448,11 @@ header .container #logo-container #logo svg {
   }
 }
 header .container #burger-container #burger {
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 1000;
   height: 40px;
   width: 40px;
 }
 header .container #nav-container {
+  grid-area: nav;
   display: none;
 }
 @media (min-width: 1024px) and (min-width: 1024px) {
